@@ -28,6 +28,7 @@
 		194603992BB203C7000FAF4F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194603982BB203C7000FAF4F /* LoginView.swift */; };
 		1946039B2BB203D7000FAF4F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946039A2BB203D7000FAF4F /* RegistrationView.swift */; };
 		1946039D2BB2053D000FAF4F /* StandardTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946039C2BB2053D000FAF4F /* StandardTextFieldModifier.swift */; };
+		1946039F2BB209DB000FAF4F /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946039E2BB209DB000FAF4F /* AuthenticationFormProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		194603982BB203C7000FAF4F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1946039A2BB203D7000FAF4F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		1946039C2BB2053D000FAF4F /* StandardTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextFieldModifier.swift; sourceTree = "<group>"; };
+		1946039E2BB209DB000FAF4F /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 		194603942BB2038E000FAF4F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				1946039E2BB209DB000FAF4F /* AuthenticationFormProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				192A5E382BB1C69300995286 /* FeedCell.swift in Sources */,
 				192A5E512BB1F1AC00995286 /* FeedViewModel.swift in Sources */,
 				192A5E4C2BB1F14800995286 /* Post.swift in Sources */,
+				1946039F2BB209DB000FAF4F /* AuthenticationFormProtocol.swift in Sources */,
 				192A5E3A2BB1CDCE00995286 /* UserCell.swift in Sources */,
 				192A5E4A2BB1D74100995286 /* PostGridView.swift in Sources */,
 				194603992BB203C7000FAF4F /* LoginView.swift in Sources */,
