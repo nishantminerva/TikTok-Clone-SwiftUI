@@ -22,6 +22,9 @@
 		192A5E442BB1D34100995286 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E432BB1D34100995286 /* ProfileHeaderView.swift */; };
 		192A5E482BB1D5BC00995286 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E472BB1D5BC00995286 /* UserStatView.swift */; };
 		192A5E4A2BB1D74100995286 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E492BB1D74100995286 /* PostGridView.swift */; };
+		192A5E4C2BB1F14800995286 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E4B2BB1F14800995286 /* Post.swift */; };
+		192A5E512BB1F1AC00995286 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E502BB1F1AC00995286 /* FeedViewModel.swift */; };
+		192A5E532BB1F8A200995286 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A5E522BB1F8A200995286 /* CustomVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		192A5E432BB1D34100995286 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		192A5E472BB1D5BC00995286 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		192A5E492BB1D74100995286 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		192A5E4B2BB1F14800995286 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		192A5E502BB1F1AC00995286 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		192A5E522BB1F8A200995286 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		192A5E262BB1BFE100995286 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				192A5E4B2BB1F14800995286 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 		192A5E2B2BB1C03C00995286 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				192A5E522BB1F8A200995286 /* CustomVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,8 +178,9 @@
 		192A5E2C2BB1C04900995286 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				192A5E352BB1C50000995286 /* FeedView.swift */,
-				192A5E372BB1C69300995286 /* FeedCell.swift */,
+				192A5E4F2BB1F19200995286 /* ViewModel */,
+				192A5E4E2BB1F18C00995286 /* View */,
+				192A5E4D2BB1F18300995286 /* Service */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -242,6 +251,30 @@
 				192A5E412BB1D2DD00995286 /* CurrentUserProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		192A5E4D2BB1F18300995286 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		192A5E4E2BB1F18C00995286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				192A5E352BB1C50000995286 /* FeedView.swift */,
+				192A5E372BB1C69300995286 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		192A5E4F2BB1F19200995286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				192A5E502BB1F1AC00995286 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				192A5E3E2BB1D02100995286 /* NotificationCell.swift in Sources */,
+				192A5E532BB1F8A200995286 /* CustomVideoPlayer.swift in Sources */,
 				192A5E3C2BB1CDD700995286 /* ExploreView.swift in Sources */,
 				192A5E442BB1D34100995286 /* ProfileHeaderView.swift in Sources */,
 				192A5E362BB1C50000995286 /* FeedView.swift in Sources */,
 				192A5E382BB1C69300995286 /* FeedCell.swift in Sources */,
+				192A5E512BB1F1AC00995286 /* FeedViewModel.swift in Sources */,
+				192A5E4C2BB1F14800995286 /* Post.swift in Sources */,
 				192A5E3A2BB1CDCE00995286 /* UserCell.swift in Sources */,
 				192A5E4A2BB1D74100995286 /* PostGridView.swift in Sources */,
 				192A5E162BB1BF8200995286 /* ContentView.swift in Sources */,

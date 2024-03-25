@@ -6,19 +6,35 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct FeedCell: View {
-    var post: Int
+//    var post: Int
+    var post: Post
+    
+    var player: AVPlayer
+    
+    init(post: Post, player: AVPlayer) {
+        self.post = post
+//        self.player = AVPlayer(url: URL(string: post.videoUrl)!)
+        self.player = player
+    }
     
     var body: some View {
         ZStack{
-            Rectangle()
-                .fill(.pink)
+            
+//            VideoPlayer(player: AVPlayer(url: URL(string: post.videoUrl)!))
+//            CustomVideoPlayer(player: AVPlayer(url: URL(string: post.videoUrl)!))
+            CustomVideoPlayer(player: player)
                 .containerRelativeFrame([.horizontal,.vertical])
-                .overlay{
-                    Text("post \(post)")
-                        .foregroundStyle(.white)
-                }
+            
+//            Rectangle()
+//                .fill(.pink)
+//                .containerRelativeFrame([.horizontal,.vertical])
+//                .overlay{
+//                    Text("post \(post)")
+//                        .foregroundStyle(.white)
+//                }
             
             VStack{
                 Spacer()
@@ -94,9 +110,21 @@ struct FeedCell: View {
             }
             .padding()
         }
+        .onTapGesture {
+            switch player.timeControlStatus {
+            case .paused:
+                player.play()
+            case .waitingToPlayAtSpecifiedRate:
+                break
+            case .playing:
+                player.pause()
+            @unknown default:
+                break
+            }
+        }
     }
 }
 
 #Preview {
-    FeedCell(post: 2)
+    FeedCell(post: Post(id: NSUUID().uuidString, videoUrl: ""), player: AVPlayer())
 }
