@@ -50,6 +50,7 @@ struct FeedView: View {
         player.replaceCurrentItem(with: nil)
         let playerItem = AVPlayerItem(url: URL(string: currentPost.videoUrl)!)
         player.replaceCurrentItem(with: playerItem)
+        player.play()
     }
 }
 
