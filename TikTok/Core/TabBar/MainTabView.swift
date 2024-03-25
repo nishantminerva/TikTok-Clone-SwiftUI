@@ -23,7 +23,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 0}
                 .tag(0)
             
-            Text("Friends")
+            ExploreView()
                 .tabItem {
                     VStack{
                         Image(systemName: "person.2")
