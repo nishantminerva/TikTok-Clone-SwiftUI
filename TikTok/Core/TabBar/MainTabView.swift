@@ -34,7 +34,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 1}
                 .tag(1)
             
-            NotificationView()
+            Text("Add")
                 .tabItem {
                     VStack{
                         Image(systemName: "plus")
@@ -45,7 +45,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 2}
                 .tag(2)
             
-            Text("Person")
+            NotificationView()
                 .tabItem {
                     VStack{
                         Image(systemName: "heart")
@@ -56,7 +56,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 3}
                 .tag(3)
             
-            Text("Profile")
+            CurrentUserProfileView()
                 .tabItem {
                     VStack{
                         Image(systemName: "person")
