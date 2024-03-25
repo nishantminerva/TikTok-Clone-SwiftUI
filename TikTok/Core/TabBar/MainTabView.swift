@@ -34,7 +34,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 1}
                 .tag(1)
             
-            Text("Explore")
+            NotificationView()
                 .tabItem {
                     VStack{
                         Image(systemName: "plus")
