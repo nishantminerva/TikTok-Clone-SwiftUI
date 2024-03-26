@@ -22,10 +22,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TikTokApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+    private let authService = AuthService()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(authService: authService)
         }
     }
 }
