@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel(authService: AuthService())
     
     var body: some View {
         NavigationStack{
@@ -46,7 +47,8 @@ struct LoginView: View {
                 
                 //      login button
                 Button {
-                    
+                    Task{await viewModel.login(withEmail: email, password: password)}
+//                    print("DEBUG: Login")
                 } label: {
                     Text("Login")
                         .foregroundStyle(.white)
